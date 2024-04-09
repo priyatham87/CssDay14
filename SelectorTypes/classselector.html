@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class Selector</title>
+        <link rel="icon" type="image" href="./user.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <style>
+            .body
+            {
+                background-color: yellowgreen;
+            }
+            .heading
+            {
+                background-color: burlywood;
+            }
+            .heading{
+                color: red;
+            }
+            .label
+            {
+                color: crimson;
+                font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-style: normal;
+            font-variant: normal;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <center>
+            <h1 class="heading head">Registration Form</h1>
+            <form method="get" autocomplete="on">
+            <label for="first name" class="label">First Name:</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="First Name" placeholder="First Name" required >
+            <br>
+            <br>
+    
+            <label for="Last name" class="label">Last Name:</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="Last Name" placeholder="Last Name" required>
+            <br>
+            <br>
+            <label class="label">Departement:</label>
+            <i class="fa-solid fa-building"></i>
+            <select required>
+                <option >Select Options</option>
+                <option >mech</option>
+                <option>civil</option>
+                <option>cs</option>
+            </select>
+            <br>
+            <br>
+            <label for="user" class="label">User Name:</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="email" id="user" required placeholder="User Name">
+            <br>
+            <br>
+            <label for="pwd" class="label">Password:</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="password" id="pwd"  placeholder="Password" maxlength="8" required >
+            <br>
+            <br>
+            <label for="cpwd" class="label">Confirm Password:</label>
+            <i class="fa-solid fa-user"></i>
+            <input type="password" id="cpwd" required placeholder="Confirm Password" >
+            <br>
+            <br>
+            <label for="email" class="label">Email:</label>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" required placeholder="Email" >
+            <br>
+            <br>
+            <label for="Con" class="label">Contact:</label>
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" id="Con" required placeholder="+91" >
+            <br>
+            <br>
+            <input type="reset" class="label">
+            <input type="submit" class="label">
+        </form>
+        </center>
+</html>
